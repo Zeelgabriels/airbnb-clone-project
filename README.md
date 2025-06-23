@@ -361,6 +361,67 @@ Effective teams maintain open communication through:
 
 This collaborative approach ensures that every aspect of the project receives proper attention and expertise, resulting in higher quality software delivered more efficiently.
 
+## UI Component Patterns
+
+To keep our codebase modular, reusable, and easy to maintain, we’ll break the UI into self‑contained components. Below is our initial component inventory and a suggested folder/file structure.
+
+### Component Inventory
+
+| Component       | Description                                                                                  | Props / State                                        |
+| --------------- | -------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| **Navbar**      | Site header with logo, navigation links, user menu, and mobile toggler.                     | `links: Array<{ label: string; href: string }>`<br>`currentUser?: User`<br>State: `isMenuOpen: boolean` |
+| **SearchBar**   | Input + filters for property search (location, dates, guests)                                 | `onSearch: (criteria) => void`<br>`defaultValues?`    |
+| **PropertyCard**| Displays a single property in the listing: image, title, price, location, and favorite toggle | `property: Property`<br>`onToggleFavorite: () => void` |
+| **ImageCarousel** | Reusable carousel for cycling through multiple images                                | `images: string[]`<br>`autoPlay?: boolean`            |
+| **Rating**      | Shows star rating and number of reviews                                                      | `value: number`<br>`max?: number`                    |
+| **Pagination**  | Next/Previous controls with page numbers                                                     | `currentPage: number`<br>`totalPages: number`<br>`onPageChange: (n) => void` |
+| **BookingForm** | Form to select dates, guests, and initiate booking                                            | `propertyId: string`<br>`onSubmit: (bookingData) => void` |
+| **Footer**      | Site footer with links, contact info, and social icons                                       | _static, no props_                                   |
+
+### Suggested Folder Structure
+
+src/
+└── components/
+├── Navbar/
+│ ├── Navbar.tsx
+│ ├── Navbar.module.css (or .scss / styled.ts)
+│ └── index.ts (re‑export)
+├── SearchBar/
+│ ├── SearchBar.tsx
+│ └── SearchBar.module.css
+├── PropertyCard/
+│ ├── PropertyCard.tsx
+│ └── PropertyCard.module.css
+├── ImageCarousel/
+│ ├── ImageCarousel.tsx
+│ └── ImageCarousel.module.css
+├── Rating/
+│ └── Rating.tsx
+├── Pagination/
+│ └── Pagination.tsx
+├── BookingForm/
+│ └── BookingForm.tsx
+└── Footer/
+└── Footer.tsx
+
+
+### Design Patterns & Guidelines
+
+- **Presentational vs. Container**  
+  Keep UI logic (layout, styling) separate from data fetching/business logic.  
+- **Props-Driven**  
+  All dynamic data flows in via props; components remain stateless whenever possible.  
+- **Atomic Design**  
+  Build from “atoms” (e.g. `Rating`, `Button`) → “molecules” (e.g. `SearchBar`) → “organisms” (e.g. `Navbar`) → “templates” → “pages.”  
+- **Styling**  
+  We’ll use CSS Modules (or Tailwind) for scoping; follow a mobile‑first approach using flexbox and grid.  
+- **Accessibility**  
+  - All interactive elements keyboard‑focusable  
+  - ARIA labels on carousels, form fields, and toggles  
+  - Semantic HTML (e.g. `<nav>`, `<main>`, `<header>`, `<footer>`)
+
+---
+
 ## 🔄 Development Philosophy
 
 This project emphasizes **user-centered design** and **accessibility**, ensuring that all users can easily navigate and use the platform. The design follows modern web standards and incorporates:
