@@ -136,6 +136,100 @@ A well-designed booking system is not just about aesthetics—it directly impact
 
 A user-friendly booking system transforms potential confusion into confidence, hesitation into action, and one-time users into loyal customers. By prioritizing usability, accessibility, and clear communication, we create an experience that not only meets user needs but exceeds their expectations.
 
+## 🎨 Design Properties
+
+### Color Styles
+Our color palette is carefully chosen to create a modern, trustworthy, and engaging user experience:
+
+| Color Type | Hex Code | Usage | Psychology |
+|------------|----------|-------|------------|
+| **Primary** | `#34967C` | Main brand color, CTAs, highlights | Energy, excitement, urgency - encourages action |
+| **Secondary** | `#FFA800` | Accent elements, links, secondary actions | Trust, reliability, calm professionalism |
+| **Background** | `#FFFFFF` | Main background, cards, clean spaces | Cleanliness, simplicity, modern aesthetic |
+| **Text Primary** | `#161117` | Headers, main content, important information | High contrast, excellent readability |
+| **Text Secondary** | `#CACACA` | Supporting text, descriptions, metadata | Subtle information hierarchy |
+
+### Typography System
+Our typography follows a clear hierarchy that enhances readability and creates visual consistency:
+
+| Font Style | Specifications | Usage Examples |
+|------------|---------------|----------------|
+| **Primary Font** | Quicksand, Medium (500), 16px | Body text, descriptions, general content |
+| **Headings** | Quicksand, Bold (700), 20px-50px | Page titles, section headers, property names |
+| **Secondary Text** | Quicksand, Medium (400), 14px | Captions, metadata, supplementary information |
+
+#### Typography Rationale
+- **Sans-serif (Quicksand) Font Family**: Modern, friendly, and highly legible across all devices
+- **Weight Variations**: Create clear information hierarchy without overwhelming users
+- **Size Scaling**: Ensures readability while maintaining visual harmony
+- **Line Height**: Optimized for comfortable reading experience
+
+### Design Token Structure
+```css
+/* Color Tokens */
+--color-primary: #34967C;
+--color-secondary: #FFA800;
+--color-background: #FFFFFF;
+--color-text-primary: #161117;
+--color-text-secondary: #CACACA;
+
+/* Typography Tokens */
+--font-family-primary: 'Quicksand', 'Helvetica Neue', Arial, sans-serif;
+--font-weight-normal: 400;
+--font-weight-medium: 500;
+--font-weight-bold: 700;
+--font-size-body: 16px;
+--font-size-caption: 14px;
+--font-size-heading-small: 20px;
+--font-size-heading-large: 50px;
+```
+
+## 🔍 Importance of Identifying Design Properties
+
+### Why Design Properties Matter in Development
+
+**Consistency Across Development**:
+- **Reusable Design Tokens**: Prevents inconsistencies when multiple developers work on different components
+- **Scalable Design System**: Easy to maintain and update design elements across the entire application
+- **Brand Coherence**: Ensures every part of the application feels cohesive and professional
+
+**Development Efficiency**:
+- **Faster Implementation**: Developers don't need to guess colors or font sizes
+- **Reduced Back-and-Forth**: Clear specifications minimize design revisions during development
+- **Component Reusability**: Standardized properties make components more modular and reusable
+
+**User Experience Benefits**:
+- **Visual Hierarchy**: Consistent typography helps users understand content importance
+- **Accessibility**: Proper color contrast ratios ensure readability for all users
+- **Cognitive Load**: Familiar patterns reduce mental effort required to navigate the interface
+
+### Design System Thinking
+
+**Atomic Design Approach**:
+1. **Atoms**: Basic design elements (colors, fonts, spacing)
+2. **Molecules**: Simple component combinations (search bar, property card)
+3. **Organisms**: Complex component sections (navigation header, property grid)
+4. **Templates**: Page layouts and structure
+5. **Pages**: Specific instances with real content
+
+**Maintainability Benefits**:
+- **Single Source of Truth**: Changes to design tokens automatically update throughout the application
+- **Designer-Developer Communication**: Shared vocabulary and specifications
+- **Quality Assurance**: Easier to spot and fix design inconsistencies
+
+### Technical Implementation Strategy
+
+**CSS Custom Properties**:
+Using CSS variables ensures easy theme switching and consistent application of design properties across all components.
+
+**Component-Based Architecture**:
+Design properties inform how we structure reusable components, ensuring each component maintains design consistency while being flexible enough for different contexts.
+
+**Responsive Design Integration**:
+Typography and color properties are defined with responsive considerations, ensuring excellent user experience across all device sizes.
+
+By identifying and documenting these design properties early in the development process, we create a solid foundation that supports both design consistency and development efficiency. This systematic approach transforms design mockups into a living, maintainable design system that grows with our application.
+
 ## 🔄 Development Philosophy
 
 This project emphasizes **user-centered design** and **accessibility**, ensuring that all users can easily navigate and use the platform. The design follows modern web standards and incorporates:
