@@ -230,6 +230,137 @@ Typography and color properties are defined with responsive considerations, ensu
 
 By identifying and documenting these design properties early in the development process, we create a solid foundation that supports both design consistency and development efficiency. This systematic approach transforms design mockups into a living, maintainable design system that grows with our application.
 
+# Project Roles and Responsibilities
+
+## 🎯 Team Structure Overview
+
+Successful software development requires a diverse team of professionals, each bringing specialized skills and perspectives to create exceptional products. Our StayEase project structure reflects industry-standard roles that ensure comprehensive coverage of all project aspects—from initial concept to final deployment and ongoing maintenance.
+
+## 👥 Core Development Roles
+
+### **🔧 Project Manager**
+**Primary Responsibilities:**
+- **Timeline Management**: Create and maintain project schedules, ensuring milestones are met
+- **Resource Coordination**: Allocate team members and resources effectively across tasks
+- **Risk Management**: Identify potential blockers and develop mitigation strategies
+- **Stakeholder Communication**: Serve as primary liaison between technical team and business stakeholders
+- **Quality Assurance**: Ensure deliverables meet project standards and requirements
+- **Budget Oversight**: Monitor project costs and resource utilization
+
+**How They Contribute to Success:**
+Project Managers keep the entire team aligned and focused, removing obstacles that could derail development progress. They transform complex projects into manageable workflows and ensure everyone understands their role in the bigger picture.
+
+### **💻 Frontend Developers**
+**Primary Responsibilities:**
+- **UI Implementation**: Convert design mockups into interactive, responsive web interfaces
+- **User Experience Optimization**: Ensure smooth, intuitive user interactions across all devices
+- **Performance Optimization**: Implement efficient code that loads quickly and runs smoothly
+- **Cross-Browser Compatibility**: Ensure consistent functionality across different browsers and devices
+- **Accessibility Implementation**: Make applications usable for users with diverse abilities
+- **Component Architecture**: Build reusable, maintainable UI components
+
+**How They Contribute to Success:**
+Frontend Developers create the user-facing experience that determines whether users love or abandon the application. They bridge the gap between design vision and technical reality, making complex functionality feel effortless to end users.
+
+### **⚙️ Backend Developers**
+**Primary Responsibilities:**
+- **API Development**: Build robust server-side APIs that handle data processing and business logic
+- **Database Architecture**: Design and optimize data storage solutions for performance and scalability
+- **Security Implementation**: Protect user data and prevent security vulnerabilities
+- **Integration Management**: Connect third-party services and external APIs
+- **Performance Optimization**: Ensure server responses are fast and efficient
+- **Business Logic Implementation**: Code the core functionality that powers the application
+
+**How They Contribute to Success:**
+Backend Developers build the foundation that everything else relies on. They ensure data is secure, processes are efficient, and the application can handle growth and complexity as it scales.
+
+## 🎨 Design and User Experience Roles
+
+### **🎨 Designers**
+**Primary Responsibilities:**
+- **User Research**: Understanding user needs, behaviors, and pain points through research and testing
+- **Wireframe Creation**: Developing structural blueprints for application layouts and user flows
+- **Visual Design**: Creating aesthetically pleasing interfaces that align with brand guidelines
+- **Prototype Development**: Building interactive mockups to test design concepts
+- **Design System Maintenance**: Establishing and maintaining consistent design patterns and components
+- **Usability Testing**: Conducting tests to validate design decisions and identify improvement opportunities
+
+**How They Contribute to Success:**
+Designers ensure the application is not only functional but delightful to use. They advocate for the user throughout the development process and create experiences that drive engagement and satisfaction.
+
+## 🔍 Quality and Operations Roles
+
+### **🧪 QA/Testers**
+**Primary Responsibilities:**
+- **Test Case Development**: Writing comprehensive test scenarios covering all application functionality
+- **Manual Testing**: Performing hands-on testing across different devices, browsers, and user scenarios
+- **Automated Testing**: Developing and maintaining automated test suites for efficient regression testing
+- **Bug Documentation**: Clearly documenting issues with steps to reproduce and expected vs. actual behavior
+- **Performance Testing**: Ensuring application performs well under various load conditions
+- **User Acceptance Testing**: Validating that features meet business requirements and user expectations
+
+**How They Contribute to Success:**
+QA/Testers serve as the final guardians of quality, catching issues before they reach users. They ensure the application works reliably and meets the high standards users expect from professional software.
+
+### **🚀 DevOps Engineers**
+**Primary Responsibilities:**
+- **Infrastructure Management**: Setting up and maintaining servers, databases, and hosting environments
+- **Deployment Automation**: Creating reliable, repeatable deployment processes
+- **CI/CD Pipeline Development**: Building automated workflows for testing and deployment
+- **Monitoring and Alerting**: Implementing systems to track application health and performance
+- **Security Management**: Ensuring infrastructure security and compliance requirements
+- **Scalability Planning**: Preparing systems to handle increased traffic and data volume
+
+**How They Contribute to Success:**
+DevOps Engineers make it possible for code to reach users reliably and securely. They eliminate manual deployment risks and ensure the application remains stable and available.
+
+## 📊 Strategic and Leadership Roles
+
+### **📋 Product Owner**
+**Primary Responsibilities:**
+- **Requirements Definition**: Clearly articulating what features need to be built and why
+- **Feature Prioritization**: Deciding which features provide the most value and should be built first
+- **Stakeholder Representation**: Serving as the voice of users and business stakeholders
+- **Acceptance Criteria**: Defining clear criteria for when features are considered complete
+- **Backlog Management**: Maintaining an organized list of features and improvements
+- **User Story Creation**: Writing clear, actionable descriptions of features from the user's perspective
+
+**How They Contribute to Success:**
+Product Owners ensure the team builds the right features in the right order. They provide clarity and direction, helping the team focus on work that delivers maximum value to users and the business.
+
+### **🏃‍♂️ Scrum Master**
+**Primary Responsibilities:**
+- **Agile Process Facilitation**: Leading daily standups, sprint planning, and retrospective meetings
+- **Blocker Removal**: Identifying and helping resolve obstacles that slow down team progress
+- **Team Coaching**: Helping team members improve their agile practices and collaboration
+- **Meeting Organization**: Scheduling and facilitating productive team meetings
+- **Process Improvement**: Continuously identifying ways to make the team more effective
+- **Stakeholder Communication**: Keeping stakeholders informed about team progress and challenges
+
+**How They Contribute to Success:**
+Scrum Masters enable high-performing teams by removing friction from the development process. They foster collaboration, continuous improvement, and help teams deliver value consistently.
+
+## 🤝 Collaborative Success Model
+
+### **Cross-Functional Collaboration**
+Success in modern software development comes from seamless collaboration between all these roles:
+
+- **Designers and Frontend Developers** work closely to ensure designs are technically feasible and properly implemented
+- **Frontend and Backend Developers** coordinate to ensure smooth data flow and optimal user experiences  
+- **QA/Testers** collaborate with all development roles to catch issues early and ensure quality
+- **Product Owners and Designers** align on user needs and business requirements
+- **DevOps Engineers** support all teams by providing reliable infrastructure and deployment processes
+
+### **Communication and Transparency**
+Effective teams maintain open communication through:
+- **Regular stand-up meetings** to share progress and identify blockers
+- **Sprint planning sessions** to align on priorities and commitments
+- **Code reviews** to maintain quality and share knowledge
+- **Retrospectives** to continuously improve team processes
+- **Documentation** to ensure knowledge is accessible to all team members
+
+This collaborative approach ensures that every aspect of the project receives proper attention and expertise, resulting in higher quality software delivered more efficiently.
+
 ## 🔄 Development Philosophy
 
 This project emphasizes **user-centered design** and **accessibility**, ensuring that all users can easily navigate and use the platform. The design follows modern web standards and incorporates:
